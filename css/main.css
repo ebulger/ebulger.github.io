@@ -43,10 +43,8 @@ ul.posts li {
 }
 
 figcaption {
-  background-color: black;
-  color: white;
+    font-size: 8px;
   font-style: 
     italic;
-  padding: 2px;
   text-align: right;
 }
