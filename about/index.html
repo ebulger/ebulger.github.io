@@ -3,120 +3,156 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Education, research and work experience of Eli Bulger.">
+  <meta name="description" content="Eli Bulger's education, work and research experience, and interests.">
   <meta name="author" content="Eli Bulger">
+  <meta property="og:title" content="About | Eli Bulger">
+  <meta property="og:description" content="Eli Bulger's education, work and research experience, and interests.">
   <link rel="canonical" href="https://ebulger.github.io/about/">
   <link rel="icon" type="image/svg+xml" href="../assets/img/favicon.svg">
-  <script>
-    try {
-      const saved = localStorage.getItem('site-theme');
-      if (saved === 'dark' || saved === 'light') document.documentElement.dataset.theme = saved;
-    } catch (_) {}
-  </script>
+  <script>try{const t=localStorage.getItem("site-theme");if(t==="light"||t==="dark")document.documentElement.dataset.theme=t}catch(e){}</script>
   <link rel="stylesheet" href="../assets/css/site.css">
   <title>About | Eli Bulger</title>
 </head>
 <body>
-  <div class="site-shell">
-    <header class="site-header">
-      <a href="../index.html" class="site-title">Eli Bulger</a>
-      <div class="header-right">
-        <nav class="site-nav" aria-label="Main navigation">
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="../index.html"><span class="brand-initials" aria-hidden="true">EB</span><span>Eli Bulger</span></a>
+    <div class="header-actions">
+      <nav class="site-nav" aria-label="Main navigation">
         <a href="../index.html">Home</a>
-        <a href="../about/" aria-current="page">About</a>
-        <a href="../publications/">Publications</a>
-        <a href="../tools/">Tools / Other</a>
-        </nav>
-        <button id="theme-toggle" class="theme-toggle" type="button" aria-pressed="false">Dark</button>
-      </div>
-    </header>
-    <main id="main">
-      <h1>About</h1>
-      <div class="about-intro">
-        <p>I'm a PhD candidate in Biomedical Engineering at Carnegie Mellon University, where I study attention using non-invasive brain imaging and computational analysis. I previously studied Nanotechnology Engineering and worked in materials science research.</p>
-        <p>I moved into neuroscience after developing an interest in attention, perception, and the nervous system. I also remain interested in materials science and other physical sciences.</p>
-      </div>
-      <section aria-labelledby="education-title" class="content-section">
-        <h2 id="education-title">Education</h2>
-        <ol class="history-list">
-        <li class="history-item">
-          <div class="history-dates">2021–present</div>
-          <div class="history-details"><h3>PhD, Biomedical Engineering</h3><p class="history-location">Carnegie Mellon University</p>
-            <p>Doctoral research in non-invasive neuroimaging and computational methods.</p>
-          </div>
-        </li>
-        <li class="history-item">
-          <div class="history-dates">2014–2019</div>
-          <div class="history-details"><h3>BASc, Honours Nanotechnology Engineering</h3><p class="history-location">University of Waterloo</p>
-            <p>Graduated with distinction.</p>
-          </div>
-        </li>
-        </ol>
-      </section>
-      <section aria-labelledby="experience-title" class="content-section">
-        <h2 id="experience-title">Research and work experience</h2>
-        <ol class="history-list">
-        <li class="history-item">
-          <div class="history-dates">Aug 2021–present</div>
-          <div class="history-details"><h3>PhD Research Assistant</h3><p class="history-location">Carnegie Mellon University</p>
-            <p>Experimental and computational research in diffuse optical imaging and the study of attention.</p>
-          </div>
-        </li>
-        <li class="history-item">
-          <div class="history-dates">Jan 2020–Aug 2021</div>
-          <div class="history-details"><h3>Research Assistant</h3><p class="history-location">Carnegie Mellon University · Laboratory for Multisensory Neuroscience</p>
-            <p>Research on attention and distractor probabilities with the Shinn-Cunningham lab.</p>
-          </div>
-        </li>
-        <li class="history-item">
-          <div class="history-dates">Jan–Aug 2018</div>
-          <div class="history-details"><h3>Intern / Research Assistant</h3><p class="history-location">PARC (Palo Alto Research Center)</p>
-            <p>Developed transparent thermal insulation and other energy-saving materials.</p><img src="../parc_aerogel.png" class="history-image" loading="lazy" alt="PARC materials research: transparent aerogel sample">
-          </div>
-        </li>
-        <li class="history-item">
-          <div class="history-dates">Aug 2016–Apr 2017</div>
-          <div class="history-details"><h3>Undergraduate Research Fellow</h3><p class="history-location">Harvard University · Aizenberg Lab</p>
-            <p>Research on photonic and hybrid organic–inorganic materials with catalytic applications.</p><img src="../raspberry%20particle%20plus%20TEM.PNG" class="history-image" loading="lazy" alt="Microscopy images of hybrid raspberry particles from earlier research">
-          </div>
-        </li>
-        <li class="history-item">
-          <div class="history-dates">Feb–Apr 2016</div>
-          <div class="history-details"><h3>Undergraduate R&amp;D Engineer</h3><p class="history-location">Qidni Labs</p>
-            <p>Worked on a prototype renal replacement device.</p>
-          </div>
-        </li>
-        <li class="history-item">
-          <div class="history-dates">May–Dec 2015</div>
-          <div class="history-details"><h3>Undergraduate Research Assistant</h3><p class="history-location">University of Waterloo · Tam Research Group</p>
-            <p>Studied materials for anti-corrosion, catalysis, and radical scavenging.</p><img src="../cnc-nanoparticles.png" class="history-image" loading="lazy" alt="Electron microscopy image associated with cellulose nanocrystal research">
-          </div>
-        </li>
-        </ol>
-      </section>
-      <section aria-labelledby="research-title" class="content-section">
-        <h2 id="research-title">Research</h2>
-        <p>My doctoral research involves non-invasive, multimodal and multivariate methods for studying attention. This includes EEG and diffuse optical imaging, measurement prediction, statistical analysis, and machine learning.</p>
-        <p>Selected published work includes <a href="https://doi.org/10.1162/IMAG.a.1289">measurement prediction and power analysis for fNIRS/DOT</a>, collaborative studies of <a href="https://doi.org/10.1364/BOE.531576">EEG source reconstruction using DOT priors</a>, and experiments on <a href="https://doi.org/10.3758/s13414-020-02151-7">distractor probabilities and attention</a>.</p>
-      </section>
-      <section aria-labelledby="technical-title" class="content-section">
-        <h2 id="technical-title">Technical interests</h2>
-        <p>Python, MATLAB, some C++; machine learning, statistical modeling, scientific computing, signal processing, instrumentation, experimental design, and hardware.</p>
-      </section>
-      <section aria-labelledby="other-title" class="content-section">
-        <h2 id="other-title">Other interests</h2>
-        <p>I play hockey and piano.</p>
-      </section>
-    </main>
-    <footer class="site-footer">
-      <a href="mailto:elib@andrew.cmu.edu">elib@andrew.cmu.edu</a>
-      <div class="footer-links">
-        <a href="https://github.com/esbulger">GitHub</a>
-        <a href="https://www.linkedin.com/in/eli-bulger/">LinkedIn</a>
-        <a href="https://scholar.google.com/citations?user=NfIHE5wAAAAJ">Google Scholar</a>
-      </div>
-    </footer>
+          <a href="../about/" aria-current="page">About</a>
+          <a href="../publications/">Publications</a>
+          <a href="../tools/">Tools / Other</a>
+      </nav>
+      <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Switch color theme" aria-pressed="false">Dark</button>
+    </div>
   </div>
-  <script src="../assets/js/main.js" defer></script>
+</header>
+<main id="main">
+<section class="page-intro">
+  <div class="container about-header">
+    <div>
+      <h1>About</h1>
+      <p class="intro-copy">I'm a PhD candidate in Biomedical Engineering at Carnegie Mellon University. I have a background in Nanotechnology Engineering and materials research, and my current work focuses on attention and non-invasive brain imaging.</p>
+      <p>My interest in neuroscience developed alongside my work in materials science, including exposure to materials for neural interfaces. I moved into neuroscience research in 2020 and began my PhD in 2021.</p>
+    </div>
+    <img class="about-photo" src="../Eli_SHIELD_review_pic.png" alt="Portrait of Eli Bulger" width="172" height="194">
+  </div>
+</section>
+<section class="page-section">
+  <div class="container">
+    <h2 class="section-title">Education</h2>
+    <div class="education-grid">
+      <article class="education-entry">
+        <p class="entry-date">2021–present</p>
+        <h3>Carnegie Mellon University</h3>
+        <p class="entry-role">PhD, Biomedical Engineering</p>
+        <p>Research in non-invasive neuroimaging, computational methods, and attention.</p>
+      </article>
+      <article class="education-entry">
+        <p class="entry-date">2014–2019</p>
+        <h3>University of Waterloo</h3>
+        <p class="entry-role">BASc, Honours Nanotechnology Engineering</p>
+        <p>Graduated with distinction.</p>
+      </article>
+    </div>
+  </div>
+</section>
+<section class="page-section">
+  <div class="container">
+    <h2 class="section-title">Research and work experience</h2>
+    <div class="experience-list">
+      <article class="experience-entry">
+        <div class="experience-date">Aug 2021–present</div>
+        <div class="experience-content">
+          <h3>Carnegie Mellon University</h3>
+          <p class="entry-role">PhD Research Assistant</p>
+          <p>Computational and experimental methods for diffuse optical imaging and the study of attention. Research includes measurement prediction and power analysis for fNIRS/DOT, statistical analysis, and multimodal neuroimaging.</p>
+        </div>
+      </article>
+      <article class="experience-entry">
+        <div class="experience-date">Jan 2020–Aug 2021</div>
+        <div class="experience-content">
+          <h3>Carnegie Mellon University</h3>
+          <p class="entry-role">Research Assistant · Laboratory for Multisensory Neuroscience</p>
+          <p>Research on attention and distractor probabilities in the Shinn-Cunningham lab.</p>
+        </div>
+      </article>
+      <article class="experience-entry with-image">
+        <div class="experience-date">Jan–Aug 2018</div>
+        <div class="experience-content">
+          <h3>PARC (Palo Alto Research Center)</h3>
+          <p class="entry-role">Intern (Jan–Apr); Research Assistant (May–Aug)</p>
+          <p>Research and development of transparent thermal insulation and other energy-saving materials.</p>
+        </div>
+        <img class="work-thumbnail" src="../parc_aerogel.png" alt="Transparent polymer aerogel material" loading="lazy">
+      </article>
+      <article class="experience-entry with-image">
+        <div class="experience-date">Aug 2016–Apr 2017</div>
+        <div class="experience-content">
+          <h3>Harvard University</h3>
+          <p class="entry-role">Undergraduate Research Fellow · Aizenberg Lab</p>
+          <p>Research on photonic materials and hybrid organic–inorganic particles for catalytic applications.</p>
+        </div>
+        <img class="work-thumbnail" src="../raspberry%20particle%20plus%20TEM.PNG" alt="Microscopy image of hybrid organic–inorganic particles" loading="lazy">
+      </article>
+      <article class="experience-entry">
+        <div class="experience-date">Feb–Apr 2016</div>
+        <div class="experience-content">
+          <h3>Qidni Labs</h3>
+          <p class="entry-role">Undergraduate R&amp;D Engineer</p>
+          <p>Development of a prototype renal-replacement device.</p>
+        </div>
+      </article>
+      <article class="experience-entry">
+        <div class="experience-date">May–Dec 2015</div>
+        <div class="experience-content">
+          <h3>University of Waterloo</h3>
+          <p class="entry-role">Undergraduate Research Assistant · Tam Research Group</p>
+          <p>Research into materials for anti-corrosion, catalysis, and radical scavenging.</p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+<section class="page-section">
+  <div class="container">
+    <h2 class="section-title">Research</h2>
+    <div class="body-copy">
+      <p>My PhD research focuses on the study of attention using non-invasive, multimodal, and multivariate methods. I work primarily with EEG, fNIRS, and diffuse optical tomography.</p>
+      <p>My published work includes <a href="https://doi.org/10.1162/IMAG.a.1289">measurement prediction and statistical power analysis for fNIRS/DOT</a>, collaborative studies of <a href="https://doi.org/10.1364/BOE.531576">EEG–DOT source reconstruction</a>, and <a href="https://doi.org/10.3758/s13414-020-02151-7">distractor probabilities in attention</a>. Details are listed on the <a href="../publications/">Publications</a> page.</p>
+    </div>
+  </div>
+</section>
+<section class="page-section">
+  <div class="container">
+    <h2 class="section-title">Technical interests</h2>
+    <div class="skills-grid">
+      <div><h3>Programming</h3><p>Python, MATLAB, some C++.</p></div>
+      <div><h3>Methods</h3><p>Signal processing, machine learning, statistical modeling, scientific computing.</p></div>
+      <div><h3>Experimental work</h3><p>Instrumentation, experimental design, and hardware development.</p></div>
+    </div>
+  </div>
+</section>
+<section class="page-section last-section">
+  <div class="container">
+    <h2 class="section-title">Other interests</h2>
+    <p>I play hockey and piano, and retain an interest in materials science and other physical sciences.</p>
+  </div>
+</section>
+</main>
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <span>© 2026 Eli Bulger</span>
+    <nav class="footer-links" aria-label="Contact and profiles">
+      <a href="mailto:elib@andrew.cmu.edu">Email</a>
+      <a href="https://www.linkedin.com/in/eli-bulger/">LinkedIn</a>
+      <a href="https://github.com/esbulger">GitHub</a>
+      <a href="https://scholar.google.com/citations?user=NfIHE5wAAAAJ">Google Scholar</a>
+    </nav>
+  </div>
+</footer>
+<script defer src="../assets/js/main.js"></script>
 </body>
 </html>

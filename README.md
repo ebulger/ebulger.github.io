@@ -1,16 +1,15 @@
-# Eli Bulger's personal website
+# Eli Bulger — personal website
 
-Static HTML/CSS website hosted at https://ebulger.github.io/.
+Personal website at https://ebulger.github.io/. Static HTML, CSS and a small JavaScript theme switch; hosted with GitHub Pages.
 
 ## Pages
-
 - Home: `index.html`
 - About: `about/index.html`
 - Publications: `publications/index.html`
 - Tools / Other: `tools/index.html`
 
-The content is intentionally simple, and no CV page is published. A curated publication list is maintained in `publications/index.html`; it links to Google Scholar but does not scrape it or update automatically. Images reused from the original site are located in the repository root.
+The About page includes employment history from the printed LinkedIn profile supplied for the redesign. The publications list is manually curated and links to Google Scholar. No CV page or generated sample tools are published.
 
-Site colors, layout, and spacing are defined in `assets/css/site.css`; the light/dark toggle is implemented in `assets/js/main.js`.
+Shared styles: `assets/css/site.css`. Theme switch: `assets/js/main.js`. Some images from the original website are referenced by the About and Publications pages.
 
-Contact: elib@andrew.cmu.edu
+The legacy `About.html` and `about/About.html` URLs are retained and show the same About content. Contact: elib@andrew.cmu.edu.
