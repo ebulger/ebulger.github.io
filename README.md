@@ -2,7 +2,7 @@
 
 Static website for https://ebulger.github.io/. The design uses black or white backgrounds with restrained forest-green links and a light/dark toggle.
 
-Pages: Home, About, Publications, Tools / Other. No CV page or sample demo is published. The About page contains education, work history, research, and interests. Contact: elib@andrew.cmu.edu.
+Pages: Home, About, Publications, Tools / Other, Contact. No CV page or sample demo is published. The About page contains education, work history, research, and interests. Contact: elib@andrew.cmu.edu.
 
 Edit HTML in each page directory and styling in `assets/css/site.css`. Light/dark theme behavior is in `assets/js/main.js`. Legacy `About.html` and `about/About.html` show the current About content.
 
