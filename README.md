@@ -1,15 +1,9 @@
 # Eli Bulger — personal website
 
-Personal website at https://ebulger.github.io/. Static HTML, CSS and a small JavaScript theme switch; hosted with GitHub Pages.
+Static website for https://ebulger.github.io/. The design uses black or white backgrounds with restrained forest-green links and a light/dark toggle.
 
-## Pages
-- Home: `index.html`
-- About: `about/index.html`
-- Publications: `publications/index.html`
-- Tools / Other: `tools/index.html`
+Pages: Home, About, Publications, Tools / Other. No CV page or sample demo is published. The About page contains education, work history, research, and interests. Contact: elib@andrew.cmu.edu.
 
-The About page includes employment history from the printed LinkedIn profile supplied for the redesign. The publications list is manually curated and links to Google Scholar. No CV page or generated sample tools are published.
+Edit HTML in each page directory and styling in `assets/css/site.css`. Light/dark theme behavior is in `assets/js/main.js`. Legacy `About.html` and `about/About.html` show the current About content.
 
-Shared styles: `assets/css/site.css`. Theme switch: `assets/js/main.js`. Some images from the original website are referenced by the About and Publications pages.
-
-The legacy `About.html` and `about/About.html` URLs are retained and show the same About content. Contact: elib@andrew.cmu.edu.
+Publication figures: Two microscopy photographs are from the original website; a flanker-task figure is linked from Springer Nature and hides itself if the host blocks image delivery. Other publications have no placeholder image until a verified figure can be sourced. The literature list is curated manually and links to Google Scholar, rather than claiming automatic syncing.
