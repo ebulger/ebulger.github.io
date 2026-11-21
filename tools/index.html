@@ -1,84 +1,48 @@
 <!doctype html>
-<html lang="en" data-theme="dark">
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#071116">
-  <meta name="description" content="Explore Eli Bulger’s scientific computing projects, open-source fNIRS/DOT power analysis software, and a synthetic signal processing demo.">
+  <meta name="description" content="Tools and other resources by Eli Bulger.">
   <meta name="author" content="Eli Bulger">
-  <meta property="og:site_name" content="Eli Bulger">
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="Tools &amp; Projects | Eli Bulger">
-  <meta property="og:description" content="Explore Eli Bulger’s scientific computing projects, open-source fNIRS/DOT power analysis software, and a synthetic signal processing demo.">
-  <meta property="og:url" content="https://ebulger.github.io/tools/">
-  <meta property="og:image" content="https://ebulger.github.io/assets/img/og-card.png">
-  <meta name="twitter:card" content="summary_large_image">
   <link rel="canonical" href="https://ebulger.github.io/tools/">
   <link rel="icon" type="image/svg+xml" href="../assets/img/favicon.svg">
+  <script>
+    try {
+      const saved = localStorage.getItem('site-theme');
+      if (saved === 'dark' || saved === 'light') document.documentElement.dataset.theme = saved;
+    } catch (_) {}
+  </script>
   <link rel="stylesheet" href="../assets/css/site.css">
-  <title>Tools &amp; Projects | Eli Bulger</title>
-  
+  <title>Tools / Other | Eli Bulger</title>
 </head>
 <body>
-<a class="skip-link" href="#main">Skip to content</a>
-<header class="site-header"><div class="container nav-wrap">
-  <a class="brand" href="../index.html" aria-label="Eli Bulger, home"><span class="brand-mark" aria-hidden="true">EB</span><span>Eli Bulger<span class="text-accent">.</span></span></a>
-  <nav aria-label="Main navigation"><ul class="nav-links" id="site-nav">
-    <li><a href="../about/">About</a></li>
-<li><a href="../publications/">Publications</a></li>
-<li><a href="../cv/">CV</a></li>
-<li><a href="../tools/" aria-current="page">Tools & more</a></li>
-  </ul></nav>
-  <div class="nav-actions">
-    <button class="theme-toggle" type="button" aria-label="Switch to light theme" title="Toggle theme">
-      <svg class="moon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><path d="M20.4 15.8A8.5 8.5 0 018.2 3.6 8.5 8.5 0 1020.4 15.8Z"/></svg>
-      <svg class="sun" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M22 12h-2M4 12H2M19 5l-1.4 1.4M6.4 17.6L5 19M19 19l-1.4-1.4M6.4 6.4L5 5"/></svg>
-    </button>
-    <a class="nav-contact" href="mailto:elib@andrew.cmu.edu?subject=Hello%20Eli">Let's talk ↗</a>
-    <button class="menu-toggle" type="button" aria-controls="site-nav" aria-expanded="false" aria-label="Toggle navigation" title="Open menu"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
-  </div>
-</div></header>
-<main id="main">
-  <section class="page-hero"><div class="container reveal"><div class="eyebrow">Tools / Software / Other</div><h1 class="page-title">Built to <span class="text-accent">figure things out.</span></h1><p class="page-description">Research software, computational methods, and a small interactive signal-processing demo. Some work is public; other projects are ongoing research rather than released software.</p><div class="page-overline"><a class="chip chip-highlight" href="https://github.com/esbulger" target="_blank" rel="noopener noreferrer">Research GitHub ↗</a><span class="chip">Python + MATLAB</span><span class="chip">Signals + models</span></div></div></section>
-
-  <section class="section"><div class="container">
-    <div class="section-head reveal"><div><div class="eyebrow">Selected projects / 01</div><h2 class="section-title">A working collection.</h2></div></div>
-    <div class="filter-bar no-print" aria-label="Filter projects" data-filter-group="tools"><button type="button" class="filter-btn is-active" data-filter="all" aria-pressed="true">All</button><button type="button" class="filter-btn" data-filter="opensource" aria-pressed="false">Open source</button><button type="button" class="filter-btn" data-filter="research" aria-pressed="false">Research</button><button type="button" class="filter-btn" data-filter="interactive" aria-pressed="false">Interactive</button></div>
-    <div class="tools-grid" data-filter-target="tools">
-      <article class="tool-card tool-card-spotlight reveal" data-category="opensource"><div class="card-topline"><span>01 / Public software</span><span>2026</span></div><h2>fNIRS / DOT Power Analysis</h2><p>A research package combining MATLAB measurement prediction with Python statistical power simulations, released alongside a first-author paper in <em>Imaging Neuroscience</em>.</p><div class="chips"><span class="chip">MATLAB</span><span class="chip">Python</span><span class="chip">Forward modeling</span><span class="chip">Statistics</span></div><a class="card-link" href="https://github.com/esbulger/fnirs-power" target="_blank" rel="noopener noreferrer">View repository <span aria-hidden="true">↗</span></a></article>
-      <article class="tool-card reveal" data-category="research"><div class="card-topline"><span>02 / Published research</span><span>2023–24</span></div><h2>EEG + DOT Source Localization</h2><p>Methods for combining electrical brain recordings with spatial information from diffuse optical tomography. Related work has been evaluated in visual and auditory cortex.</p><div class="chips"><span class="chip">EEG</span><span class="chip">DOT</span><span class="chip">Inverse problems</span></div><a class="card-link" href="../publications/">Explore publications <span aria-hidden="true">↗</span></a></article>
-      <article class="tool-card reveal" data-category="research"><div class="card-topline"><span>03 / Ongoing research</span><span>Neuroscience</span></div><h2>Auditory Attention &amp; Brain Dynamics</h2><p>Analysis of attention-related neural and hemodynamic activity, with an emphasis on experimental design, reproducible data processing, and multimodal measurements.</p><div class="chips"><span class="chip">EEG</span><span class="chip">fNIRS</span><span class="chip">Time series</span><span class="chip">Cognition</span></div><a class="card-link" href="https://www.cmu.edu/bme/biophotonics/research/nirs-eeg.html" target="_blank" rel="noopener noreferrer">Research background <span aria-hidden="true">↗</span></a></article>
-      <article class="tool-card reveal" data-category="interactive"><div class="card-topline"><span>04 / Interactive demo</span><span>Browser based</span></div><h2>Signal Processing Playground</h2><p>Explore how adding noise and varying a moving-average window changes a synthetic oscillatory signal. A small demonstration of the intuition behind noisy measurements.</p><div class="chips"><span class="chip">JavaScript</span><span class="chip">Synthetic data</span><span class="chip">Filtering</span></div><a class="card-link" href="#signal-playground">Try the demo <span aria-hidden="true">↗</span></a></article>
-    </div>
-  </div></section>
-
-  <section class="section section-divider" id="signal-playground"><div class="container">
-    <div class="lab-intro reveal"><div><div class="eyebrow">Signal playground / 02</div><h2>A little experiment in <span class="text-accent">noise.</span></h2><p>Adjust the noise level and moving-average window. The two curves start from the same simulated oscillatory signal; no real participant data are shown.</p></div><span class="chip chip-highlight">Live demo · synthetic only</span></div>
-    <div class="signal-lab reveal">
-      <div class="signal-controls"><h3>Controls</h3><p class="note">This is a visual explanation, not a physiological filter recommendation. Smoothing can also attenuate signal components.</p>
-        <div class="control-group"><label class="control-label" for="noise"><span>Noise level</span><output id="noise-output" for="noise">35%</output></label><input id="noise" type="range" min="0" max="100" step="1" value="35"></div>
-        <div class="control-group"><label class="control-label" for="window"><span>Average window</span><output id="window-output" for="window">5 samples</output></label><input id="window" type="range" min="1" max="25" step="2" value="5"></div>
-        <div class="control-group"><label class="control-label" for="frequency"><span>Oscillation</span><output id="frequency-output" for="frequency">10 Hz</output></label><input id="frequency" type="range" min="3" max="15" step="1" value="10"></div>
+  <div class="site-shell">
+    <header class="site-header">
+      <a href="../index.html" class="site-title">Eli Bulger</a>
+      <div class="header-right">
+        <nav class="site-nav" aria-label="Main navigation">
+        <a href="../index.html">Home</a>
+        <a href="../about/">About</a>
+        <a href="../publications/">Publications</a>
+        <a href="../tools/" aria-current="page">Tools / Other</a>
+        </nav>
+        <button id="theme-toggle" class="theme-toggle" type="button" aria-pressed="false">Dark</button>
       </div>
-      <div class="lab-chart"><div class="chart-top"><span class="legend">Noisy measurement</span><span class="legend filtered">Moving average</span><span>2 seconds · 100 Hz</span></div>
-        <svg class="signal-chart" viewBox="0 0 720 290" role="img" aria-labelledby="chart-title chart-desc"><title id="chart-title">Simulated time-series signal</title><desc id="chart-desc">An oscillatory signal with adjustable noise shown alongside a moving-average-smoothed version.</desc><g class="chart-grid"><line x1="29" y1="46" x2="690" y2="46"/><line x1="29" y1="94" x2="690" y2="94"/><line x1="29" y1="142" x2="690" y2="142"/><line x1="29" y1="190" x2="690" y2="190"/><line x1="29" y1="238" x2="690" y2="238"/><line x1="29" y1="33" x2="29" y2="241"/><line x1="194" y1="33" x2="194" y2="241"/><line x1="359" y1="33" x2="359" y2="241"/><line x1="524" y1="33" x2="524" y2="241"/><line x1="690" y1="33" x2="690" y2="241"/></g><path class="raw-line" id="raw-path" d="M 29 143 L 690 143"/><path class="filtered-line" id="filtered-path" d="M 29 143 L 690 143"/><g class="chart-axis"><text x="28" y="269">0s</text><text x="345" y="269">1s</text><text x="668" y="269">2s</text><text x="37" y="23">AMPLITUDE (A.U.)</text></g></svg>
-        <div class="lab-caveat"><span>Illustrative time series generated locally in the browser. No data is collected or transmitted.</span><span class="lab-readout" id="lab-readout" aria-live="polite">Window: 50 ms</span></div>
+    </header>
+    <main id="main">
+      <h1>Tools / Other</h1>
+      <p>Content to be added.</p>
+    </main>
+    <footer class="site-footer">
+      <a href="mailto:elib@andrew.cmu.edu">elib@andrew.cmu.edu</a>
+      <div class="footer-links">
+        <a href="https://github.com/esbulger">GitHub</a>
+        <a href="https://www.linkedin.com/in/eli-bulger/">LinkedIn</a>
+        <a href="https://scholar.google.com/citations?user=NfIHE5wAAAAJ">Google Scholar</a>
       </div>
-    </div>
-  </div></section>
-
-  <section class="section-tight section-divider"><div class="container"><div class="cta-panel reveal"><div><div class="eyebrow">Looking for something specific?</div><h2>Research often starts <span class="text-accent">with a conversation.</span></h2><p>For questions about methods, code, collaboration, or potential roles, feel free to reach out.</p></div><a class="btn btn-primary" href="mailto:elib@andrew.cmu.edu?subject=Question%20about%20your%20work">Email me <span aria-hidden="true">↗</span></a></div></div></section>
-</main>
-
-<footer class="site-footer"><div class="container">
-  <div class="footer-top"><div><div class="eyebrow">Eli Bulger / Get in touch</div><h2>Interested in working <span class="text-accent">together?</span></h2><p>Questions, research collaborations, and industry conversations are all welcome.</p><a class="inline-arrow" href="mailto:elib@andrew.cmu.edu">elib@andrew.cmu.edu <span aria-hidden="true">↗</span></a></div>
-    <div class="footer-links"><div><strong>Explore</strong><a href="../about/">About</a><a href="../publications/">Publications</a><a href="../cv/">CV</a><a href="../tools/">Tools &amp; more</a></div>
-      <div><strong>Elsewhere</strong><a href="https://www.linkedin.com/in/eli-bulger/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a><a href="https://github.com/esbulger" target="_blank" rel="noopener noreferrer">Research GitHub ↗</a><a href="https://github.com/ebulger" target="_blank" rel="noopener noreferrer">Website GitHub ↗</a><a href="https://scholar.google.com/citations?user=NfIHE5wAAAAJ" target="_blank" rel="noopener noreferrer">Google Scholar ↗</a></div>
-    </div>
+    </footer>
   </div>
-  <div class="footer-bottom"><span>© 2026 Eli Bulger. Built with curiosity.</span><span>Designed for the web, <a href="https://pages.github.com/" target="_blank" rel="noopener noreferrer">hosted on GitHub Pages</a>.</span></div>
-</div></footer>
-<script defer src="../assets/js/main.js"></script>
-<script defer src="../assets/js/signal-lab.js"></script>
+  <script src="../assets/js/main.js" defer></script>
 </body>
 </html>

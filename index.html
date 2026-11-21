@@ -1,102 +1,55 @@
 <!doctype html>
-<html lang="en" data-theme="dark">
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#071116">
-  <meta name="description" content="Eli Bulger is a Biomedical Engineering PhD candidate at Carnegie Mellon, working on computational neuroscience, EEG, fNIRS/DOT, biosignals and scientific software.">
+  <meta name="description" content="Eli Bulger - Biomedical Engineering PhD candidate at Carnegie Mellon University.">
   <meta name="author" content="Eli Bulger">
-  <meta property="og:site_name" content="Eli Bulger">
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="Eli Bulger | Computational Neuroscience &amp; Signal Processing">
-  <meta property="og:description" content="Eli Bulger is a Biomedical Engineering PhD candidate at Carnegie Mellon, working on computational neuroscience, EEG, fNIRS/DOT, biosignals and scientific software.">
-  <meta property="og:url" content="https://ebulger.github.io/">
-  <meta property="og:image" content="https://ebulger.github.io/assets/img/og-card.png">
-  <meta name="twitter:card" content="summary_large_image">
   <link rel="canonical" href="https://ebulger.github.io/">
   <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
+  <script>
+    try {
+      const saved = localStorage.getItem('site-theme');
+      if (saved === 'dark' || saved === 'light') document.documentElement.dataset.theme = saved;
+    } catch (_) {}
+  </script>
   <link rel="stylesheet" href="assets/css/site.css">
-  <title>Eli Bulger | Computational Neuroscience &amp; Signal Processing</title>
-  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Person", "name": "Eli Bulger", "url": "https://ebulger.github.io/", "jobTitle": "Biomedical Engineering PhD Candidate", "affiliation": {"@type": "CollegeOrUniversity", "name": "Carnegie Mellon University"}, "alumniOf": {"@type": "CollegeOrUniversity", "name": "University of Waterloo"}, "sameAs": ["https://www.linkedin.com/in/eli-bulger/", "https://github.com/esbulger", "https://github.com/ebulger", "https://scholar.google.com/citations?user=NfIHE5wAAAAJ"]}</script>
-
-  <style>
-    /* Homepage only: a short personal introduction, without decorative figures. */
-    .home-intro { min-height: min(760px, calc(100svh - 150px)); display: flex; align-items: center; padding-block: clamp(90px, 12vw, 170px); }
-    .home-intro-grid { display: grid; grid-template-columns: minmax(0, 1fr) 245px; align-items: center; gap: clamp(55px, 10vw, 155px); max-width: 975px; }
-    .home-overline { font-size: 12px; font-weight: 700; color: var(--accent); letter-spacing: .025em; margin-bottom: 20px; }
-    .home-intro h1 { font-size: clamp(46px, 5.4vw, 70px); letter-spacing: -.057em; margin-bottom: 30px; }
-    .home-intro p:not(.home-overline) { max-width: 650px; font-size: clamp(15px, 1.55vw, 17px); line-height: 1.88; margin-bottom: 20px; }
-    .home-page-links { display: flex; flex-wrap: wrap; gap: 16px 27px; margin-top: 37px; }
-    .home-page-links a { font-size: 13px; font-weight: 700; color: var(--text); border-bottom: 1px solid var(--line); padding-bottom: 5px; }
-    .home-page-links a:hover { color: var(--accent); border-color: var(--accent); }
-    .home-page-links span { font-size: 12px; margin-left: 3px; color: var(--accent); }
-    .home-photo { margin: 0; }
-    .home-photo img { width: 100%; aspect-ratio: 252 / 282; object-fit: cover; object-position: center top; filter: grayscale(1); border-radius: 7px; }
-    .home-footer { border-top: 1px solid var(--line); }
-    .home-footer-inner { display: flex; justify-content: space-between; align-items: center; gap: 20px; padding-block: 24px; font-size: 12px; color: var(--subtle); }
-    .home-footer-links { display: flex; gap: 24px; flex-wrap: wrap; }
-    .home-footer-links a { color: var(--muted); }
-    .home-footer-links a:hover { color: var(--accent); }
-    @media (max-width: 700px) {
-      .home-intro { padding-block: 75px; min-height: auto; }
-      .home-intro-grid { grid-template-columns: minmax(0, 1fr); gap: 36px; }
-      .home-photo { max-width: 180px; grid-row: 1; }
-      .home-intro h1 { margin-bottom: 22px; }
-      .home-footer-inner { flex-direction: column; align-items: flex-start; }
-    }
-  </style>
+  <title>Home | Eli Bulger</title>
 </head>
 <body>
-<a class="skip-link" href="#main">Skip to content</a>
-<header class="site-header"><div class="container nav-wrap">
-  <a class="brand" href="index.html" aria-label="Eli Bulger, home"><span class="brand-mark" aria-hidden="true">EB</span><span>Eli Bulger<span class="text-accent">.</span></span></a>
-  <nav aria-label="Main navigation"><ul class="nav-links" id="site-nav">
-    <li><a href="about/">About</a></li>
-<li><a href="publications/">Publications</a></li>
-<li><a href="cv/">CV</a></li>
-<li><a href="tools/">Tools & more</a></li>
-  </ul></nav>
-  <div class="nav-actions">
-    <button class="theme-toggle" type="button" aria-label="Switch to light theme" title="Toggle theme">
-      <svg class="moon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><path d="M20.4 15.8A8.5 8.5 0 018.2 3.6 8.5 8.5 0 1020.4 15.8Z"/></svg>
-      <svg class="sun" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M22 12h-2M4 12H2M19 5l-1.4 1.4M6.4 17.6L5 19M19 19l-1.4-1.4M6.4 6.4L5 5"/></svg>
-    </button>
-    <a class="nav-contact" href="mailto:elib@andrew.cmu.edu?subject=Hello%20Eli">Contact</a>
-    <button class="menu-toggle" type="button" aria-controls="site-nav" aria-expanded="false" aria-label="Toggle navigation" title="Open menu"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
-  </div>
-</div></header>
-<main id="main">
-  <section class="home-intro">
-    <div class="container home-intro-grid">
-      <div class="home-intro-copy">
-        <p class="home-overline">Biomedical Engineering · Carnegie Mellon University</p>
-        <h1>Hi, I'm Eli Bulger.</h1>
-        <p>I'm a PhD candidate in Biomedical Engineering at Carnegie Mellon University. My research focuses on measuring and understanding brain activity using EEG, fNIRS, and diffuse optical tomography.</p>
-        <p>I develop computational methods and software for signal processing, imaging, and statistical analysis.</p>
-        <nav class="home-page-links" aria-label="Explore this website">
-          <a href="about/">About me <span aria-hidden="true">↗</span></a>
-          <a href="publications/">Publications <span aria-hidden="true">↗</span></a>
-          <a href="cv/">CV <span aria-hidden="true">↗</span></a>
-          <a href="tools/">Tools &amp; more <span aria-hidden="true">↗</span></a>
+  <div class="site-shell">
+    <header class="site-header">
+      <a href="index.html" class="site-title">Eli Bulger</a>
+      <div class="header-right">
+        <nav class="site-nav" aria-label="Main navigation">
+        <a href="index.html" aria-current="page">Home</a>
+        <a href="about/">About</a>
+        <a href="publications/">Publications</a>
+        <a href="tools/">Tools / Other</a>
         </nav>
+        <button id="theme-toggle" class="theme-toggle" type="button" aria-pressed="false">Dark</button>
       </div>
-      <figure class="home-photo">
-        <img src="assets/img/eli-portrait.png" width="252" height="282" alt="Portrait of Eli Bulger" fetchpriority="high">
-      </figure>
-    </div>
-  </section>
-</main>
-
-<footer class="home-footer"><div class="container home-footer-inner">
-  <span>© 2026 Eli Bulger</span>
-  <div class="home-footer-links">
-    <a href="mailto:elib@andrew.cmu.edu">Email</a>
-    <a href="https://www.linkedin.com/in/eli-bulger/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-    <a href="https://github.com/esbulger" target="_blank" rel="noopener noreferrer">GitHub</a>
-    <a href="https://scholar.google.com/citations?user=NfIHE5wAAAAJ" target="_blank" rel="noopener noreferrer">Google Scholar</a>
+    </header>
+    <main id="main">
+      <section class="home-intro">
+        <div class="home-copy">
+          <h1>Eli Bulger</h1>
+          <p class="home-role">PhD Candidate in Biomedical Engineering at Carnegie Mellon University.</p>
+          <p>My research focuses on attention and non-invasive brain imaging, particularly EEG, fNIRS, and diffuse optical tomography. I work on computational methods for analyzing neural and physiological signals.</p>
+          <p>Previously, I studied Nanotechnology Engineering at the University of Waterloo and worked in materials science research.</p>
+        </div>
+        <img class="home-photo" src="Eli_SHIELD_review_pic.png" alt="Portrait of Eli Bulger" width="164" height="190">
+      </section>
+    </main>
+    <footer class="site-footer">
+      <a href="mailto:elib@andrew.cmu.edu">elib@andrew.cmu.edu</a>
+      <div class="footer-links">
+        <a href="https://github.com/esbulger">GitHub</a>
+        <a href="https://www.linkedin.com/in/eli-bulger/">LinkedIn</a>
+        <a href="https://scholar.google.com/citations?user=NfIHE5wAAAAJ">Google Scholar</a>
+      </div>
+    </footer>
   </div>
-</div></footer>
-<script defer src="assets/js/main.js"></script>
-
+  <script src="assets/js/main.js" defer></script>
 </body>
 </html>

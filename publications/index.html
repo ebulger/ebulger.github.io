@@ -1,76 +1,168 @@
 <!doctype html>
-<html lang="en" data-theme="dark">
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#071116">
-  <meta name="description" content="Research publications by Eli Bulger in neuroimaging, fNIRS/DOT power analysis, EEG, biomedical optics, and materials science.">
+  <meta name="description" content="Selected papers and patents by Eli Bulger.">
   <meta name="author" content="Eli Bulger">
-  <meta property="og:site_name" content="Eli Bulger">
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="Publications | Eli Bulger">
-  <meta property="og:description" content="Research publications by Eli Bulger in neuroimaging, fNIRS/DOT power analysis, EEG, biomedical optics, and materials science.">
-  <meta property="og:url" content="https://ebulger.github.io/publications/">
-  <meta property="og:image" content="https://ebulger.github.io/assets/img/og-card.png">
-  <meta name="twitter:card" content="summary_large_image">
   <link rel="canonical" href="https://ebulger.github.io/publications/">
   <link rel="icon" type="image/svg+xml" href="../assets/img/favicon.svg">
+  <script>
+    try {
+      const saved = localStorage.getItem('site-theme');
+      if (saved === 'dark' || saved === 'light') document.documentElement.dataset.theme = saved;
+    } catch (_) {}
+  </script>
   <link rel="stylesheet" href="../assets/css/site.css">
   <title>Publications | Eli Bulger</title>
-  
 </head>
 <body>
-<a class="skip-link" href="#main">Skip to content</a>
-<header class="site-header"><div class="container nav-wrap">
-  <a class="brand" href="../index.html" aria-label="Eli Bulger, home"><span class="brand-mark" aria-hidden="true">EB</span><span>Eli Bulger<span class="text-accent">.</span></span></a>
-  <nav aria-label="Main navigation"><ul class="nav-links" id="site-nav">
-    <li><a href="../about/">About</a></li>
-<li><a href="../publications/" aria-current="page">Publications</a></li>
-<li><a href="../cv/">CV</a></li>
-<li><a href="../tools/">Tools & more</a></li>
-  </ul></nav>
-  <div class="nav-actions">
-    <button class="theme-toggle" type="button" aria-label="Switch to light theme" title="Toggle theme">
-      <svg class="moon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><path d="M20.4 15.8A8.5 8.5 0 018.2 3.6 8.5 8.5 0 1020.4 15.8Z"/></svg>
-      <svg class="sun" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M22 12h-2M4 12H2M19 5l-1.4 1.4M6.4 17.6L5 19M19 19l-1.4-1.4M6.4 6.4L5 5"/></svg>
-    </button>
-    <a class="nav-contact" href="mailto:elib@andrew.cmu.edu?subject=Hello%20Eli">Let's talk ↗</a>
-    <button class="menu-toggle" type="button" aria-controls="site-nav" aria-expanded="false" aria-label="Toggle navigation" title="Open menu"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+  <div class="site-shell">
+    <header class="site-header">
+      <a href="../index.html" class="site-title">Eli Bulger</a>
+      <div class="header-right">
+        <nav class="site-nav" aria-label="Main navigation">
+        <a href="../index.html">Home</a>
+        <a href="../about/">About</a>
+        <a href="../publications/" aria-current="page">Publications</a>
+        <a href="../tools/">Tools / Other</a>
+        </nav>
+        <button id="theme-toggle" class="theme-toggle" type="button" aria-pressed="false">Dark</button>
+      </div>
+    </header>
+    <main id="main">
+      <h1>Publications</h1>
+      <p>Selected papers and patents. See <a href="https://scholar.google.com/citations?user=NfIHE5wAAAAJ">Google Scholar</a> for the full publication list.</p>
+      <section class="content-section" aria-labelledby="papers-title">
+        <h2 id="papers-title">Papers</h2>
+        <ol class="publication-list">
+        <li class="publication-entry">
+          <div class="publication-year">2026</div>
+          <div class="publication-info">
+            <a class="publication-title" href="https://doi.org/10.1162/IMAG.a.1289">Measurement prediction and power analysis for fNIRS and DOT</a>
+            <div class="publication-authors">Eli Bulger , Jiaming Cao, Abigail L. Noyce, Barbara G. Shinn-Cunningham, Jana M. Kainerstorfer</div>
+            <div class="publication-journal">Imaging Neuroscience, 4 (2026) · DOI: 10.1162/IMAG.a.1289</div>
+            <div class="publication-journal"><a href="https://github.com/esbulger/fnirs-power">Code</a></div>
+          </div>
+          
+        </li>
+        <li class="publication-entry">
+          <div class="publication-year">2024</div>
+          <div class="publication-info">
+            <a class="publication-title" href="https://doi.org/10.1364/BOE.531576">Optimizing spatial accuracy in electroencephalography reconstruction through diffuse optical tomography priors in the auditory cortex</a>
+            <div class="publication-authors">Yutian Qin, Jingyi Wu, Eli Bulger , Jiaming Cao, Hamid Dehghani, Barbara Shinn-Cunningham, Jana M. Kainerstorfer</div>
+            <div class="publication-journal">Biomedical Optics Express, 15(8), 4859–4876 (2024) · DOI: 10.1364/BOE.531576</div>
+            
+          </div>
+          
+        </li>
+        <li class="publication-entry">
+          <div class="publication-year">2024</div>
+          <div class="publication-info">
+            <a class="publication-title" href="https://doi.org/10.1364/OTS.2024.OM3D.6">Effect of neural source depth on diffuse optical tomography enhanced electroencephalography reconstruction</a>
+            <div class="publication-authors">Yutian Qin, Jingyi Wu, Eli Bulger , Jiaming Cao, Hamid Dehghani, Barbara Shinn-Cunningham, Jana M. Kainerstorfer</div>
+            <div class="publication-journal">Optica Biophotonics Congress, paper OM3D.6 (2024) · DOI: 10.1364/OTS.2024.OM3D.6</div>
+            
+          </div>
+          
+        </li>
+        <li class="publication-entry">
+          <div class="publication-year">2023</div>
+          <div class="publication-info">
+            <a class="publication-title" href="https://doi.org/10.1016/j.neuroimage.2023.120210">Diffuse optical tomography spatial prior for EEG source localization in human visual cortex</a>
+            <div class="publication-authors">Jiaming Cao, Eli Bulger , Barbara Shinn-Cunningham, Pulkit Grover, Jana M. Kainerstorfer</div>
+            <div class="publication-journal">NeuroImage, 277, 120210 (2023) · DOI: 10.1016/j.neuroimage.2023.120210</div>
+            
+          </div>
+          
+        </li>
+        <li class="publication-entry">
+          <div class="publication-year">2023</div>
+          <div class="publication-info">
+            <a class="publication-title" href="https://doi.org/10.1117/1.JBO.28.7.075001">Evaluating feasibility of functional near-infrared spectroscopy in dolphins</a>
+            <div class="publication-authors">Alexander Ruesch, Deepshikha Acharya, Eli Bulger , Jiaming Cao, J. Christopher McKnight, Mercy Manley, Andreas Fahlman, Barbara G. Shinn-Cunningham, Jana M. Kainerstorfer</div>
+            <div class="publication-journal">Journal of Biomedical Optics, 28(7), 075001 (2023) · DOI: 10.1117/1.JBO.28.7.075001</div>
+            
+          </div>
+          
+        </li>
+        <li class="publication-entry">
+          <div class="publication-year">2021</div>
+          <div class="publication-info">
+            <a class="publication-title" href="https://doi.org/10.3758/s13414-020-02151-7">Distractor probabilities modulate flanker task performance</a>
+            <div class="publication-authors">Eli Bulger, Barbara G. Shinn-Cunningham, Abigail L. Noyce</div>
+            <div class="publication-journal">Attention, Perception, &amp; Psychophysics, 83, 866–881 (2021; online 2020)</div>
+            
+          </div>
+          
+        </li>
+        <li class="publication-entry">
+          <div class="publication-year">2018</div>
+          <div class="publication-info">
+            <a class="publication-title" href="https://doi.org/10.1002/adfm.201704559">Modular design of advanced catalytic materials using hybrid organic–inorganic raspberry particles</a>
+            <div class="publication-authors">Elijah Shirman, Tanya Shirman, Anna V. Shneidman, Alison Grinthal, Katherine R. Phillips, Hayley Whelan, Eli Bulger , Marcus Abramovitch, Jatin Patil, Rochelle Nevarez, Joanna Aizenberg</div>
+            <div class="publication-journal">Advanced Functional Materials, 28, 1704559 (2018) · DOI: 10.1002/adfm.201704559</div>
+            
+          </div>
+          <img src="../raspberry%20particle%20plus%20TEM.PNG" alt="Microscopy of hybrid raspberry particles" class="publication-thumb" loading="lazy">
+        </li>
+        <li class="publication-entry">
+          <div class="publication-year">2016</div>
+          <div class="publication-info">
+            <a class="publication-title" href="https://doi.org/10.1007/s10570-016-1057-0">Enhanced radical scavenging activity of polyhydroxylated C60 functionalized cellulose nanocrystals</a>
+            <div class="publication-authors">Fatima Awan, Eli Bulger , Richard M. Berry, Kam C. Tam</div>
+            <div class="publication-journal">Cellulose, 23(6), 3589–3599 (2016) · DOI: 10.1007/s10570-016-1057-0</div>
+            
+          </div>
+          <img src="../cnc-nanoparticles.png" alt="Microscopy of cellulose nanocrystals" class="publication-thumb" loading="lazy">
+        </li>
+        </ol>
+      </section>
+      <section class="content-section" aria-labelledby="patents-title">
+        <h2 id="patents-title">Patents</h2>
+        <ol class="publication-list">
+        <li class="publication-entry">
+          <div class="publication-year">2020</div>
+          <div class="publication-info">
+            <a class="publication-title" href="https://patents.google.com/patent/US20200199319A1/en">High optical transparency polymer aerogels using low refractive index monomers</a>
+            <div class="publication-authors">Patent application</div>
+            <div class="publication-journal">US20200199319A1</div>
+            
+          </div>
+          
+        </li>
+        <li class="publication-entry">
+          <div class="publication-year">2020</div>
+          <div class="publication-info">
+            <a class="publication-title" href="https://patents.google.com/patent/US20200031977A1/en">Method to produce colorless, high porosity, transparent polymer aerogels</a>
+            <div class="publication-authors">Inventors: Mahati Chintapalli, Barkev Keoshkerian, Alec Ho, Gabriel Iftime, Quentin Van Overmeere, Eli Bulger</div>
+            <div class="publication-journal">US20200031977A1 (published 2020); US10836855B2 (granted 2020)</div>
+            
+          </div>
+          
+        </li>
+        <li class="publication-entry">
+          <div class="publication-year">2020</div>
+          <div class="publication-info">
+            <a class="publication-title" href="https://patents.google.com/patent/US20200200684A1/en">Printed sensor with vibrant colorimetric particles</a>
+            <div class="publication-authors">Patent application</div>
+            <div class="publication-journal">US20200200684A1</div>
+            
+          </div>
+          
+        </li>
+        </ol>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <a href="mailto:elib@andrew.cmu.edu">elib@andrew.cmu.edu</a>
+      <div class="footer-links">
+        <a href="https://github.com/esbulger">GitHub</a>
+        <a href="https://www.linkedin.com/in/eli-bulger/">LinkedIn</a>
+        <a href="https://scholar.google.com/citations?user=NfIHE5wAAAAJ">Google Scholar</a>
+      </div>
+    </footer>
   </div>
-</div></header>
-<main id="main">
-  <section class="page-hero"><div class="container reveal"><div class="eyebrow">Selected publications &amp; intellectual property</div><h1 class="page-title">Ideas, <span class="text-accent">in print.</span></h1><p class="page-description">Peer-reviewed work spanning computational neuroimaging, biomedical optics, and materials science. Links point to the original papers or patent record.</p><div class="page-overline"><a class="chip chip-highlight" href="https://scholar.google.com/citations?user=NfIHE5wAAAAJ" target="_blank" rel="noopener noreferrer">Google Scholar ↗</a><a class="chip" href="https://github.com/esbulger/fnirs-power" target="_blank" rel="noopener noreferrer">fNIRS power software ↗</a></div></div></section>
-
-  <section class="section"><div class="container">
-    <div class="filter-bar no-print" aria-label="Filter publications" data-filter-group="publications">
-      <button type="button" class="filter-btn is-active" data-filter="all" aria-pressed="true">All</button>
-      <button type="button" class="filter-btn" data-filter="neuroscience" aria-pressed="false">Neuroscience &amp; optics</button>
-      <button type="button" class="filter-btn" data-filter="materials" aria-pressed="false">Materials science</button>
-      <button type="button" class="filter-btn" data-filter="patents" aria-pressed="false">Patents</button>
-    </div>
-    <div class="publication-list" data-filter-target="publications">
-      <article class="publication reveal" data-category="neuroscience"><span class="year mono">2026</span><div><div class="pub-type kicker">Journal article · First author</div><h2>Measurement prediction and power analysis for fNIRS and DOT</h2><p class="authors"><strong>Eli Bulger</strong>, Jiaming Cao, Abigail L. Noyce, Barbara G. Shinn-Cunningham, Jana M. Kainerstorfer</p><p class="journal">Imaging Neuroscience, 4 (2026) · DOI: 10.1162/IMAG.a.1289</p><div class="pub-secondary"><a href="https://github.com/esbulger/fnirs-power" target="_blank" rel="noopener noreferrer">Code &amp; documentation ↗</a></div></div><a class="pub-link" href="https://doi.org/10.1162/IMAG.a.1289" target="_blank" rel="noopener noreferrer" aria-label="Read 2026 fNIRS power analysis paper">Paper ↗</a></article>
-      <article class="publication reveal" data-category="neuroscience"><span class="year mono">2024</span><div><div class="pub-type kicker">Journal article</div><h2>Optimizing spatial accuracy in electroencephalography reconstruction through diffuse optical tomography priors in the auditory cortex</h2><p class="authors">Yutian Qin, Jingyi Wu, <strong>Eli Bulger</strong>, Jiaming Cao, Hamid Dehghani, Barbara Shinn-Cunningham, Jana M. Kainerstorfer</p><p class="journal">Biomedical Optics Express, 15(8), 4859–4876 (2024) · DOI: 10.1364/BOE.531576</p></div><a class="pub-link" href="https://doi.org/10.1364/BOE.531576" target="_blank" rel="noopener noreferrer" aria-label="Read 2024 auditory cortex reconstruction paper">Paper ↗</a></article>
-      <article class="publication reveal" data-category="neuroscience"><span class="year mono">2024</span><div><div class="pub-type kicker">Conference paper</div><h2>Effect of neural source depth on diffuse optical tomography enhanced electroencephalography reconstruction</h2><p class="authors">Yutian Qin, Jingyi Wu, <strong>Eli Bulger</strong>, Jiaming Cao, Hamid Dehghani, Barbara Shinn-Cunningham, Jana M. Kainerstorfer</p><p class="journal">Optica Biophotonics Congress, paper OM3D.6 (2024) · DOI: 10.1364/OTS.2024.OM3D.6</p></div><a class="pub-link" href="https://doi.org/10.1364/OTS.2024.OM3D.6" target="_blank" rel="noopener noreferrer" aria-label="Read 2024 Optica conference paper">Paper ↗</a></article>
-      <article class="publication reveal" data-category="neuroscience"><span class="year mono">2023</span><div><div class="pub-type kicker">Journal article</div><h2>Diffuse optical tomography spatial prior for EEG source localization in human visual cortex</h2><p class="authors">Jiaming Cao, <strong>Eli Bulger</strong>, Barbara Shinn-Cunningham, Pulkit Grover, Jana M. Kainerstorfer</p><p class="journal">NeuroImage, 277, 120210 (2023) · DOI: 10.1016/j.neuroimage.2023.120210</p></div><a class="pub-link" href="https://doi.org/10.1016/j.neuroimage.2023.120210" target="_blank" rel="noopener noreferrer" aria-label="Read 2023 visual cortex source localization paper">Paper ↗</a></article>
-      <article class="publication reveal" data-category="neuroscience"><span class="year mono">2023</span><div><div class="pub-type kicker">Journal article</div><h2>Evaluating feasibility of functional near-infrared spectroscopy in dolphins</h2><p class="authors">Alexander Ruesch, Deepshikha Acharya, <strong>Eli Bulger</strong>, Jiaming Cao, J. Christopher McKnight, Mercy Manley, Andreas Fahlman, Barbara G. Shinn-Cunningham, Jana M. Kainerstorfer</p><p class="journal">Journal of Biomedical Optics, 28(7), 075001 (2023) · DOI: 10.1117/1.JBO.28.7.075001</p></div><a class="pub-link" href="https://doi.org/10.1117/1.JBO.28.7.075001" target="_blank" rel="noopener noreferrer" aria-label="Read 2023 dolphin fNIRS feasibility paper">Paper ↗</a></article>
-      <article class="publication reveal" data-category="materials"><span class="year mono">2018</span><div><div class="pub-type kicker">Journal article · Materials science</div><h2>Modular design of advanced catalytic materials using hybrid organic–inorganic raspberry particles</h2><p class="authors">Elijah Shirman, Tanya Shirman, Anna V. Shneidman, Alison Grinthal, Katherine R. Phillips, Hayley Whelan, <strong>Eli Bulger</strong>, Marcus Abramovitch, Jatin Patil, Rochelle Nevarez, Joanna Aizenberg</p><p class="journal">Advanced Functional Materials, 28, 1704559 (2018) · DOI: 10.1002/adfm.201704559</p></div><a class="pub-link" href="https://doi.org/10.1002/adfm.201704559" target="_blank" rel="noopener noreferrer" aria-label="Read materials science paper">Paper ↗</a></article>
-      <article class="publication reveal" data-category="materials"><span class="year mono">2016</span><div><div class="pub-type kicker">Journal article · Materials science</div><h2>Enhanced radical scavenging activity of polyhydroxylated C60 functionalized cellulose nanocrystals</h2><p class="authors">Fatima Awan, <strong>Eli Bulger</strong>, Richard M. Berry, Kam C. Tam</p><p class="journal">Cellulose, 23(6), 3589–3599 (2016) · DOI: 10.1007/s10570-016-1057-0</p></div><a class="pub-link" href="https://doi.org/10.1007/s10570-016-1057-0" target="_blank" rel="noopener noreferrer" aria-label="Read cellulose nanocrystals paper">Paper ↗</a></article>
-      <article class="publication reveal" data-category="patents"><span class="year mono">2020</span><div><div class="pub-type kicker">Published patent application · Granted US patent</div><h2>Method to produce colorless, high porosity, transparent polymer aerogels</h2><p class="authors">Inventors: Mahati Chintapalli, Barkev Keoshkerian, Alec Ho, Gabriel Iftime, Quentin Van Overmeere, <strong>Eli Bulger</strong></p><p class="journal">US20200031977A1 (published 2020); US10836855B2 (granted 2020)</p></div><a class="pub-link" href="https://patents.google.com/patent/US20200031977A1/en" target="_blank" rel="noopener noreferrer" aria-label="View polymer aerogel patent record">Patent ↗</a></article>
-    </div>
-  </div></section>
-  <section class="section-tight section-divider"><div class="container"><div class="cta-panel reveal"><div><div class="eyebrow">Beyond the papers</div><h2>Interested in the <span class="text-accent">methods?</span></h2><p>Explore the public software connected to the fNIRS/DOT power analysis framework, or get in touch about collaborations.</p></div><a class="btn btn-primary" href="../tools/">Explore the tools <span aria-hidden="true">↗</span></a></div></div></section>
-</main>
-
-<footer class="site-footer"><div class="container">
-  <div class="footer-top"><div><div class="eyebrow">Eli Bulger / Get in touch</div><h2>Interested in working <span class="text-accent">together?</span></h2><p>Questions, research collaborations, and industry conversations are all welcome.</p><a class="inline-arrow" href="mailto:elib@andrew.cmu.edu">elib@andrew.cmu.edu <span aria-hidden="true">↗</span></a></div>
-    <div class="footer-links"><div><strong>Explore</strong><a href="../about/">About</a><a href="../publications/">Publications</a><a href="../cv/">CV</a><a href="../tools/">Tools &amp; more</a></div>
-      <div><strong>Elsewhere</strong><a href="https://www.linkedin.com/in/eli-bulger/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a><a href="https://github.com/esbulger" target="_blank" rel="noopener noreferrer">Research GitHub ↗</a><a href="https://github.com/ebulger" target="_blank" rel="noopener noreferrer">Website GitHub ↗</a><a href="https://scholar.google.com/citations?user=NfIHE5wAAAAJ" target="_blank" rel="noopener noreferrer">Google Scholar ↗</a></div>
-    </div>
-  </div>
-  <div class="footer-bottom"><span>© 2026 Eli Bulger. Built with curiosity.</span><span>Designed for the web, <a href="https://pages.github.com/" target="_blank" rel="noopener noreferrer">hosted on GitHub Pages</a>.</span></div>
-</div></footer>
-<script defer src="../assets/js/main.js"></script>
-
+  <script src="../assets/js/main.js" defer></script>
 </body>
 </html>
